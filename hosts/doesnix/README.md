@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/26458780/122496094-1c0be700-cfe3-11eb-8c45-508b08f8cd79.png)
 
 ## What is it?
-**doesnix** is a machine that currently implements a Samba share called `does-samba` at `10.0.100.3`. Those two facts can be seen by the [configuration.nix](./doesnix/configuration.nix). In a way, this is self-documenting.
+**doesnix** is a machine that currently implements a Samba share called `does-samba` at `10.0.100.3`. Those two facts can be seen by the [configuration.nix](configuration.nix). In a way, this is self-documenting.
 
 - This machine runs ZFS in a mirrored array of the hard drives that can clearly be seen in the above image.
 
@@ -24,7 +24,7 @@
 - This machine may do a lot more in the future.
 
 ## Specs?
-The hardware configuration for the machine is kept up to date in [hwinfo](./doesnix/metadata/hwinfo)
+The hardware configuration for the machine is kept up to date in [hwinfo](metadata/hwinfo)
 
 ## Why?
 
