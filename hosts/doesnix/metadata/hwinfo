@@ -1,0 +1,94 @@
+cpu:
+                       Intel(R) Core(TM) i7-3770T CPU @ 2.50GHz, 3316 MHz
+                       Intel(R) Core(TM) i7-3770T CPU @ 2.50GHz, 3566 MHz
+                       Intel(R) Core(TM) i7-3770T CPU @ 2.50GHz, 3407 MHz
+                       Intel(R) Core(TM) i7-3770T CPU @ 2.50GHz, 3425 MHz
+                       Intel(R) Core(TM) i7-3770T CPU @ 2.50GHz, 3509 MHz
+                       Intel(R) Core(TM) i7-3770T CPU @ 2.50GHz, 3537 MHz
+                       Intel(R) Core(TM) i7-3770T CPU @ 2.50GHz, 3575 MHz
+                       Intel(R) Core(TM) i7-3770T CPU @ 2.50GHz, 3428 MHz
+keyboard:
+  /dev/input/event0    Colorado HP PR1101U / Primax PMX-KPR1101U Keyboard
+monitor:
+                       ASUS VS228
+graphics card:
+                       Intel Xeon E3-1200 v2/3rd Gen Core processor Graphics Controller
+sound:
+                       Intel 7 Series/C216 Chipset Family High Definition Audio Controller
+storage:
+                       Intel 7 Series/C210 Series Chipset Family 6-port SATA Controller [AHCI mode]
+network:
+  eno1                 Intel 82574L Gigabit Network Connection
+  wlp1s0               Intel Centrino Advanced-N 6235 AGN
+  eno2                 Intel 82579LM Gigabit Network Connection (Lewisville)
+  wlp0s20u3            Ralink RT2501/RT2573 Wireless Adapter
+network interface:
+  eno1                 Ethernet network interface
+  wlp0s20u3            Ethernet network interface
+  lo                   Loopback network interface
+  eno2                 Ethernet network interface
+  wlp1s0               Ethernet network interface
+disk:
+  /dev/ram2            Disk
+  /dev/sdd             SANDISK SDDR-489
+  /dev/ram0            Disk
+  /dev/sdb             WDC WD10EZEX-00K
+  /dev/ram9            Disk
+  /dev/ram14           Disk
+  /dev/ram7            Disk
+  /dev/ram12           Disk
+  /dev/ram5            Disk
+  /dev/ram10           Disk
+  /dev/ram3            Disk
+  /dev/sde             SANDISK SDDR-489
+  /dev/ram1            Disk
+  /dev/sdc             SANDISK SDDR-489
+  /dev/ram15           Disk
+  /dev/sda             ST1000DM003-1CH1
+  /dev/ram8            Disk
+  /dev/ram13           Disk
+  /dev/ram6            Disk
+  /dev/ram11           Disk
+  /dev/ram4            Disk
+partition:
+  /dev/sdd1            Partition
+  /dev/sdd2            Partition
+  /dev/sdb1            Partition
+  /dev/sdb2            Partition
+  /dev/sdb3            Partition
+  /dev/sda1            Partition
+  /dev/sda2            Partition
+  /dev/sda3            Partition
+usb controller:
+                       Intel 7 Series/C216 Chipset Family USB Enhanced Host Controller #2
+                       Intel 7 Series/C216 Chipset Family USB Enhanced Host Controller #1
+                       Intel 7 Series/C210 Series Chipset Family USB xHCI Host Controller
+bios:
+                       BIOS
+bridge:
+                       Intel 7 Series/C216 Chipset Family PCI Express Root Port 1
+                       Intel Q77 Express Chipset LPC Controller
+                       Intel 82801 PCI Bridge
+                       Intel Xeon E3-1200 v2/3rd Gen Core processor DRAM Controller
+                       Intel 7 Series/C210 Series Chipset Family PCI Express Root Port 7
+hub:
+                       Linux Foundation 2.0 root hub
+                       Intel Integrated Rate Matching Hub
+                       Linux Foundation 3.0 root hub
+                       Linux Foundation 2.0 root hub
+                       Intel Integrated Rate Matching Hub
+                       Linux Foundation 2.0 root hub
+memory:
+                       Main Memory
+bluetooth:
+                       Intel Bluetooth Device
+unknown:
+                       FPU
+                       DMA controller
+                       PIC
+                       Keyboard controller
+                       Intel 7 Series/C216 Chipset Family MEI Controller #1
+                       Intel 7 Series/C216 Chipset Family SMBus Controller
+                       Intel 7 Series/C210 Series Chipset Family KT Controller
+                       Serial controller
+  /dev/input/event1    Colorado HP PR1101U / Primax PMX-KPR1101U Keyboard

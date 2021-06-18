@@ -15,6 +15,14 @@
         ];
         specialArgs = { inherit inputs; };
       };
+      doesnix = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          (import ./hosts/doesnix/configuration.nix)
+          (import ./mixins/nix2.4.nix)
+        ];
+        specialArgs = { inherit inputs; };
+      };
     };
   };
 }
