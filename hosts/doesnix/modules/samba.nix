@@ -22,6 +22,8 @@
         browseable = "yes";
         "read only" = "false";
         "guest ok" = "yes";
+        "create mask" = "777";
+        "directory mask" = "777";
         comment = "The DoES Public Samba Share";
       };
     };
