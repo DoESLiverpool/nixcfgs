@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./modules/inkscape.nix
+      ./modules/roland.nix
       ./modules/inkcut.nix
       ../../mixins/avahi.nix
     ];
