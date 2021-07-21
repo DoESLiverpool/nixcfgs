@@ -3,9 +3,10 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-master.url = "github:nixos/nixpkgs/master";
   };
 
-  outputs = { self, nixpkgs, ... }@inputs: {
+  outputs = { self, nixpkgs, nixpkgs-master, ... }@inputs: {
     nixosConfigurations = {
       vinylcutter = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -26,4 +27,5 @@
     };
   };
 }
+
 

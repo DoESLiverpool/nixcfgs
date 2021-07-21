@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modules/inkscape.nix
       ../../mixins/avahi.nix
     ];
 
@@ -72,8 +73,6 @@
      vim 
      git
      firefox
-     inkcut
-     inkscape
    ];
 
   # Some programs need SUID wrappers, can be configured further or are
