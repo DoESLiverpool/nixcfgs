@@ -1,5 +1,5 @@
 {
-  description = "A NixOS flake for the Astralship and the machines aboard it.";
+  description = "A NixOS flake for the DoESLiverpool makerspace and the machines within it.";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
