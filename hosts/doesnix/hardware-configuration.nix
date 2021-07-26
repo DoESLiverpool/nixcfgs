@@ -34,7 +34,7 @@
     };
 
   fileSystems."/boot-fallback" =
-    { device = "/dev/disk/by-uuid/CCF0-B208";
+    { device = "/dev/disk/by-uuid/2B39-4705";
       fsType = "vfat";
     };
 
