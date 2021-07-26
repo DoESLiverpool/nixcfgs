@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./modules/samba.nix
+      ./modules/mosquitto-container.nix
       ../../mixins/avahi.nix
       ../../profiles/ssh.nix
       ../../profiles/makers.nix
