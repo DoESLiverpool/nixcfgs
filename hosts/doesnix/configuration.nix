@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./modules/samba.nix
       ./modules/mosquitto-container.nix
+      ./modules/node-red-container.nix
       ../../mixins/avahi.nix
       ../../profiles/ssh.nix
       ../../profiles/makers.nix
@@ -34,12 +35,29 @@
 
   time.timeZone = "Europe/London";
 
-  networking.interfaces.eno1.useDHCP = true;
-  networking.interfaces.eno2.useDHCP = true;
-  networking.interfaces.wlp1s0.useDHCP = false;
-  networking.interfaces.wlp0s20u1 = {
-    useDHCP = true;
-    ipv4.addresses = [ { address = "10.0.100.3"; prefixLength = 8; } ];
+  # Creates a bridge called 'br0' which will bridge eno1 to anything that
+  # requests it elsewhere in the configuration, such as nixos-containers via
+  # their hostBridge attribute. This means that such a container has its own
+  # IP, just like a virtual machine, so it can also have its own avahi-daemon
+  # and broadcast its hostname on mDNS; which is the motivation for doing this.
+  # Note, wireless devices cannot be bridged, so don't try! :D
+  #
+  # MacVLANs might also be a better way of doing this in future.
+  networking = {
+    useNetworkd = true;
+    # When using systemd-networkd useDHCP must be set to false
+    useDHCP = false;
+    bridges = {
+      br0 = {
+        interfaces = [ "eno1" ];
+      };
+    };
+    interfaces = {
+      br0 = {
+        useDHCP = true;
+        ipv4.addresses = [{ address = "10.0.100.3"; prefixLength = 8; }];
+      };
+    };
   };
 
   # List packages installed in system profile. To search, run:
