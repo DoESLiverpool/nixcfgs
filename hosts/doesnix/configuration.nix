@@ -11,6 +11,7 @@
       ./modules/samba.nix
       ./modules/mosquitto-container.nix
       ./modules/node-red-container.nix
+      ./modules/ipfs.nix
       ../../mixins/avahi.nix
       ../../profiles/ssh.nix
       ../../profiles/makers.nix
