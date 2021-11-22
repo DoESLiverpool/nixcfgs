@@ -14,7 +14,6 @@
       ../../mixins/avahi.nix
       ../../profiles/ssh.nix
       ../../profiles/makers.nix
-      ../../profiles/wireless.nix
     ];
 
   boot.supportedFilesystems = [ "zfs" ];
