@@ -12,6 +12,7 @@
       ./modules/mosquitto-container.nix
       ./modules/node-red-container.nix
       ./modules/ipfs.nix
+      ./modules/log-to-tty1.nix
       ../../mixins/avahi.nix
       ../../profiles/ssh.nix
       ../../profiles/makers.nix
