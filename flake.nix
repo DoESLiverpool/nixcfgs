@@ -2,7 +2,7 @@
   description = "A NixOS flake for the DoESLiverpool makerspace and the machines within it.";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-21.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
     nixpkgs-master.url = "github:nixos/nixpkgs/master";
     home-manager.url = "github:nix-community/home-manager";
   };
