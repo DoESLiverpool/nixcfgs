@@ -11,6 +11,7 @@
     config = { config, pkgs, ... }: {
       imports = [ ./mosquitto.nix ../../../mixins/avahi.nix ];
       networking.hostName = "mqtt";
+      system.stateVersion = "21.05";
     };
   };
 }

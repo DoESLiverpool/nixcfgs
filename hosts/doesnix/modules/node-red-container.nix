@@ -28,6 +28,7 @@
         interfaces."eth0".useDHCP = true;
         useHostResolvConf = false;
       };
+      system.stateVersion = "21.05";
     };
   };
 }
