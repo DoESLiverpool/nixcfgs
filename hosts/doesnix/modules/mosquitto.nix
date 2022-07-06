@@ -2,7 +2,7 @@
   networking.firewall.allowedTCPPorts = [ 1883 ];
   services.mosquitto = {
     enable = true;
-    settings.max_keepalive = 60;
+    settings.max_keepalive = 300;
     listeners = [
       {
         port = 1883;
