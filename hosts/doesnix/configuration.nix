@@ -19,7 +19,7 @@
     ];
 
   boot.supportedFilesystems = [ "zfs" ];
-  networking.hostId = "9ff35da5"; 
+  networking.hostId = "9ff35da5";
 
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -76,4 +76,3 @@
   system.stateVersion = "20.09"; # Did you read the comment?
 
 }
- 

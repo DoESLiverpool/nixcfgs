@@ -14,8 +14,8 @@
       vinylcutter = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          (import ./hosts/vinylcutter/configuration.nix)
-          (import ./mixins/nix2.4.nix)
+          ./hosts/vinylcutter/configuration.nix
+          ./mixins/nix2.4.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -35,8 +35,8 @@
       doesnix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          (import ./hosts/doesnix/configuration.nix)
-          (import ./mixins/nix2.4.nix)
+          ./hosts/doesnix/configuration.nix
+          ./mixins/nix2.4.nix
           {
             _module.args.nixinate = {
               host = "doesnix.local";
