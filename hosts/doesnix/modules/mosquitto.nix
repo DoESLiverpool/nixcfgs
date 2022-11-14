@@ -11,7 +11,7 @@
         settings = {
           allow_anonymous = true;
         };
-        acl = [ "topic readwrite #" ];
+        acl = [ "topic readwrite #" "pattern readwrite #" ];
       }
     ];
   };
