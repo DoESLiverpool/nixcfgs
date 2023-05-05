@@ -6,10 +6,12 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
     nixpkgs-master.url = "github:nixos/nixpkgs/master";
     home-manager.url = "github:nix-community/home-manager";
+    robotnix.url = "github:danielfullmer/robotnix";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-master, home-manager, nixinate, ... }@inputs: {
+  outputs = { self, nixpkgs, nixpkgs-master, home-manager, nixinate, robotnix, ... }@inputs: {
     apps = nixinate.nixinate.x86_64-linux self;
+    robotnixConfigurations.admin-phone = robotnix.lib.robotnixSystem (import ./hosts/admin-phone);
     nixosConfigurations = {
       vinylcutter = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
